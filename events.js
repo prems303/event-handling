@@ -12,6 +12,8 @@ function start () {
   two()
 
   three()
+
+  four()
 }
 
 function one () {
@@ -40,6 +42,10 @@ function three () {
 }
 
 // CREATE FUNCTION four HERE
+function four () {
+  var four = document.getElementById('four')
+  four.addEventListener('click', makeYellow)
+}
 
 // Changes the background color of event's target
 function makeBlue (evt) {
@@ -58,3 +64,6 @@ function makeOrange (evt) {
   evt.target.style.backgroundColor = 'orange'
 }
 
+function makeYellow (evt) {
+  evt.target.style.backgroundColor = 'yellow'
+}
