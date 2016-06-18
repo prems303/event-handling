@@ -10,6 +10,8 @@ function start () {
 
   // Your turn! Create a new function called `two`, then call it from here.
   two()
+
+  three()
 }
 
 function one () {
@@ -31,6 +33,11 @@ function two () {
 }
 
 // CREATE FUNCTION three HERE
+function three () {
+  var three = document.getElementById('three')
+  three.addEventListener('mouseenter', makeOrange)
+  three.addEventListener('mouseleave', makeWhite)
+}
 
 // CREATE FUNCTION four HERE
 
@@ -45,5 +52,9 @@ function makeWhite (evt) {
 
 function makeGreen (evt) {
   evt.target.style.backgroundColor = 'green'
+}
+
+function makeOrange (evt) {
+  evt.target.style.backgroundColor = 'orange'
 }
 
